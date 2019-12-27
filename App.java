@@ -40,7 +40,7 @@ public class App
 		}
 		this.output=new ArrayList<String>();
 		
-		String inputStr = input.replace(" ","");
+		String inputStr = input.replaceAll(" ","");
 	    String regNum = "^[0-9\\,]*$";
 	    
 	    if(!Pattern.matches(regNum, inputStr)){
